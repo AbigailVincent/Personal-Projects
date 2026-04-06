@@ -18,11 +18,21 @@
         }
 
         body {
-            background-size: cover;
-            background-position: center;
-            background-color: rgb(245,245,220);
-            margin: 20px;
-        }
+    margin: 20px; /*empty space */
+
+    background-image: /* for layers */
+        linear-gradient( /* first layer the gradient */
+            to bottom,
+            rgba(245, 245, 220, 0.2) 0%,
+            rgba(222, 205, 170, 0.8) 70%,
+            rgba(205, 190, 150, 1) 100%
+        ),
+        url("beigeflowers.jpg"); /*bottom layer*/
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
         p {
             text-align: center;
